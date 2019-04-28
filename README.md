@@ -1,12 +1,12 @@
 # ClearChat
-A simple spigot plugin to clear your chat!
+A simple spigot plugin to clear your chat! Featuring configurable messages.
 
 ## Commands
    - /clearchat
-   - /cc
+      - /cc
    
 ## Permissions
    - clear.chat
    
 ## To-Do
-   - Configurable messages
+   - Edit messages via command
