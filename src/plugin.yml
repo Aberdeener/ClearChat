@@ -1,7 +1,6 @@
 name: ClearChat
 version: 1.0
 main: me.aberdeener.clearchat.ClearChat
-
 commands:
    clearchat:
       aliases: [cc]

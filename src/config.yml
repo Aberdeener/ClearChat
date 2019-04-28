@@ -1,0 +1,5 @@
+#message when user does not have the permission
+no-permission: Oops ya got no perms D=
+
+#message when chat is cleared
+chat-cleared: Cleared chat for ya =D
