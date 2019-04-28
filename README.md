@@ -10,3 +10,4 @@ A simple spigot plugin to clear your chat! Featuring configurable messages.
    
 ## To-Do
    - Edit messages via command
+   - Not display ~200 empty messages in console
