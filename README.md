@@ -20,7 +20,6 @@ Check it out @ https://www.spigotmc.org/resources/clearchat.66886/
    
 ## To-Do
    - Use args rather than one long command
-   - Allow colours via command rather than config
    - Not display ~200 empty messages in console
    
 ### Long Term To-Do:
