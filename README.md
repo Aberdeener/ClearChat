@@ -14,8 +14,7 @@ Check it out @ https://www.spigotmc.org/resources/clearchat.66886/
    - majorchat.config
    
 ## To-Do
-   - Use args rather than one long command
-   - Not display ~200 empty messages in console
+   - Tab Completion
    
 ### Long Term To-Do:
    - Add the following:
