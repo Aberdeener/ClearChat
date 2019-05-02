@@ -1,0 +1,33 @@
+name: ClearChat
+version: 2.1
+main: me.aberdeener.clearchat.ClearChat
+api-version: 1.13
+
+softdepend: [Vault]
+
+commands:
+   clearchat:
+      aliases: [cc]
+      description: Clear yo chat B  
+   ccmsgnoperm: 
+      aliases: [ccmnp]
+      description: Change the no permission message
+   ccmsgcleared: 
+      aliases: [ccmc]
+      description: Change the success message
+   socialspy:
+      aliases: [sspy]
+      description: Social spy, allows you to spy group chat and private messages.
+      usage: /<command> [player] [on|off]
+   tell:
+      aliases: [msg, w, whisper, pm]
+      description: Whisper to your ears!
+      usage: /<command> <player> <message>
+   reply:
+      aliases: [r]
+      description: Reply to your last recipient!
+      usage: /<command> <message>
+   sc:
+      aliases: [schat, staffchat]
+      description: Staff chat commands!
+      usage: /<command> <toggle|message|setprefix>

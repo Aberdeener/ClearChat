@@ -1,5 +1,0 @@
-#message when user does not have the permission
-no-permission: '&cNo Permission! '
-
-#message when chat is cleared
-chat-cleared: '&6Chat Cleared! '

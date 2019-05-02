@@ -1,0 +1,45 @@
+# MajorChat - A spigot plugin featuring everything you need for your chat!
+# Created by Aberdeener
+# With contributions from yangyang200.
+
+# Message sent when the user does not have permissions for the command.
+no-permission: "&cInsufficient permissions!"
+
+# Message sent when the chat is cleared.
+chat-cleared: "&aSuccessfully cleared the chat."
+
+# Staff chat related settings:
+#
+# Small tutorial: /sc setprefix means that
+# when you start your chat message with the prefix that you have set,
+# then it's automatically bumped into the staff chat.
+staff-chat:
+  # The format for the staff chat message.
+  format: "&8[&cSC&8] &r%player%&8: &r%message%"
+
+# Chat formatter related settings:
+formatter:
+  # If the formatter is enabled:
+  enabled: true
+
+  # The format of your chat.
+  format: "&r%player%&7: &r%message%"
+
+# Private message related settings:
+private-messaging:
+  # The format of PMs.
+  format: "&e[&a%from% &e-> &a%to%&e] &r%message%"
+
+# Join quit message
+join-quit-message:
+  # If this feature is enabled:
+  enabled: true
+
+  # The join message:
+  # You may use %player% for the full name of the player (prefix+displayname+suffix)
+  # or %username% for the Mojang username,
+  # or %displayname% for the display name.
+  join-message: "&8[&2+&8] &7%displayname%"
+
+  # The quit message:
+  quit-message: "&8[%4-&8] &7%displayname%"

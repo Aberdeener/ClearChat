@@ -12,6 +12,8 @@ Check it out @ https://www.spigotmc.org/resources/clearchat.66886/
    - majorchat.help
    - majorchat.clear
    - majorchat.config
+   - majorchat.staff
+   - majorchat.msg
    
 ## To-Do
    - Tab Completion
@@ -19,8 +21,6 @@ Check it out @ https://www.spigotmc.org/resources/clearchat.66886/
 ### Long Term To-Do:
    - Add the following:
       - MOTD
-      - Join/Leave messages
       - Chat groups
       - Staff chat
-      - Private Messaging
       - And more!
