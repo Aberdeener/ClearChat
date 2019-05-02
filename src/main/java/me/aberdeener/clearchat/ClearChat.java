@@ -125,7 +125,9 @@ public class ClearChat extends JavaPlugin {
 		}
 
 		
-		//Message Editing (no permission message)
+		// Message Editing (no permission message)
+		// Commit by yangyang200: It's basically a bad practice to do this as it will destroy the comments.
+		/*
 		if (commandLabel.equalsIgnoreCase("ccmsgnoperm") || commandLabel.equalsIgnoreCase("ccmnp")) {
 			//Console Sender Check
 			if (! (sender instanceof Player)) {
@@ -194,6 +196,8 @@ public class ClearChat extends JavaPlugin {
 			return true;
 
 		}
+
+		 */
 
 		return true;
 
