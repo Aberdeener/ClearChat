@@ -1,8 +1,28 @@
+/*
+ * MajorChat plugin project
+ * This program is created by Aberdeener and yangyang200.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+
 package me.aberdeener.clearchat;
 
 import me.aberdeener.clearchat.commands.pm.ReplyCommand;
 import me.aberdeener.clearchat.commands.socialspy.SocialSpyCommand;
 import me.aberdeener.clearchat.commands.pm.TellCommand;
+import me.aberdeener.clearchat.commands.staffchat.StaffChatCommand;
+import me.aberdeener.clearchat.commands.staffchat.StaffChatListener;
 import me.aberdeener.clearchat.formatter.ChatFormatterListener;
 import me.aberdeener.clearchat.joinleave.JoinLeaveMessages;
 import me.aberdeener.clearchat.utils.configuration.Configuration;
@@ -40,10 +60,8 @@ public class ClearChat extends JavaPlugin {
 	public void onEnable() {
 		instance = this;
 		// @Aberdeener
-		// Please notice that do not use saveConfig().
-		// Configuration is meant to be adapt by the player, and should not be saved.
-		// If it's saved, then all the comments will be gone.
-		// Consider creating data.yml for data storage like below if required.
+		// Please do not use config.save().
+		// It will remove all the comments in the configuration.
 		ConfigurationManager manager = new ConfigurationManager();
 		config = manager.loadConfigFromResource("config.yml");
 		data = manager.loadConfigFromResource("data.yml");
@@ -68,7 +86,9 @@ public class ClearChat extends JavaPlugin {
 		new SocialSpyCommand();
 		new TellCommand();
 		new ReplyCommand();
+		new StaffChatCommand();
 
+		regEvent(new StaffChatListener());
 		regEvent(new ChatFormatterListener());
 		regEvent(new JoinLeaveMessages());
 

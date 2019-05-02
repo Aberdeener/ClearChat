@@ -1,6 +1,6 @@
 /*
- * The VaultCore project
- * This program is created by yangyang200, and some of the VaultMC developers.
+ * MajorChat plugin project
+ * This program is created by Aberdeener and yangyang200.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

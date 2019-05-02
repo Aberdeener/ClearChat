@@ -6,6 +6,10 @@ api-version: 1.13
 softdepend: [Vault]
 
 commands:
+   majorchat:
+      aliases: [mc]
+      description: The main command for the plugin.
+      usage: /<command> <reload|version>
    clearchat:
       aliases: [cc]
       description: Clear yo chat B

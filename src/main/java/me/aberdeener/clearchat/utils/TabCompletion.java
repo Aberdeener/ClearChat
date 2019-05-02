@@ -1,6 +1,6 @@
 /*
- * The VaultCore project
- * This program is created by yangyang200, and some of the VaultMC developers.
+ * MajorChat plugin project
+ * This program is created by Aberdeener and yangyang200.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,8 +18,6 @@
 
 package me.aberdeener.clearchat.utils;
 
-import net.vaultmc.yangyang200.vaultcore.YangCore;
-import net.vaultmc.yangyang200.vaultcore.modules.utils.DataManager;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
@@ -46,16 +44,11 @@ public final class TabCompletion {
      * @return List of all online player's name with best match
      */
     public static List<String> allOnlinePlayers(String currentArg) {
-        DataManager manager = YangCore.getDataManager();  // Prevent vanished players from showing up in auto completion
 
         if (currentArg.equals("")) {
             List<String> output = new ArrayList<>();
-            for (Player i : Bukkit.getOnlinePlayers()) {
-                if (manager.contains("vanish." + i.getUniqueId().toString() + ".vanished")) {
-                    if (!((boolean) manager.getPersistentData("vanish." + i.getUniqueId().toString() + ".vanished")))
-                        output.add(i.getName());
-                } else output.add(i.getName());
-            }
+            for (Player i : Bukkit.getOnlinePlayers())
+                output.add(i.getName());
             Collections.sort(output);
             return output;
         } else {
